@@ -1,19 +1,29 @@
-body {
-  background-color: rgb(231, 77, 22);
+
+  
+
+body {background-color: rgb(231, 77, 22);
+  
+  
 }
 
 header {
-  padding: 20px;
+    
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: rgb(231, 77, 22);
-  color: #fff;
+  
+  
 }
 
 nav {
-  display: flex;
-  padding: 15px;
-  margin-right: 40px;
+    display: flex;
+  padding-top: 15px;
+  margin-right: 20px;
   justify-content: flex-end;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
 }
 
 ul {
@@ -22,40 +32,163 @@ ul {
 
 li {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: underline;
   font-size: 150%;
+  
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-#profile {
-  display: flex;
-}
+
+.profile {display: flex;}
 
 #profile-pic {
+   
   border-radius: 50%;
-  padding: 20px;
-  margin-left: 200px;
-  min-width: 400px;
-  height: 400px;
+  padding:20px;
+  margin-left:200px;
+  min-width:400px;
+  height:400px;
+  
+    
 }
 
-#wrapper {
+.profile h1  {
+    font-size: 200%;
+    color: white;
+    margin-top: 200px;
+    margin-left: 80px;
+  }
+
+.profile p {font-size: 150%;
+    font-style: italic;
+    color: white;
+    margin-top: 250px;
+    margin-left:-100px ;
+   
+}
+
+.wrapper {
   display: flex;
-  flex: 3;
+ 
   flex-direction: row;
   flex-wrap: wrap;
 
   justify-content: center;
-
   margin-left: 350px;
   margin-top: 50px;
 }
+
+.main-box {
+  background-color: #ffffff;
+    width: 400px;
+  padding: 20px;
+  margin: 30px 80px 80px 50px;
+  flex: 0 0 400px;
+ 
+  
+}
+
+.dropdown-content{
+  display: none;
+  font-family:'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+  padding:20px;
+  background-color: #ffffff;
+ 
+  border-radius:10px;
+}
+
+
+.image-box:hover .dropdown-content {
+  display: block;
+}
+.header-box {
+  padding: 10px;
+  width: 360px;
+  font-size: 40px;
+  margin-left:25px ;
+  color: black;
+  font-family: font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;}
+
+  #image-1 {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    background-image: url(images/laptop-tea-2.jpg);
+    background-size: 350px;
+    width: 360px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+
+
+
+#image-2 {
+    display: flex;
+    padding: 10px;
+    margin-top: 40px;
+    background-image: url(images/work.jpg);
+    background-size: 400px;
+    width: 360px;
+    height: 250px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+
+  #image-3 {
+    display: flex;
+    padding: 10px;
+    margin-top: 0px;
+    background-image: url(images/Teamplayer.jpg);
+    background-size: 400px;
+    width: 360px;
+    height: 250px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  #scroll {text-decoration: none;
+    color:black}
+
+    aside {
+    padding:50px;
+margin:10px;}
+
+aside h1, aside a{font:bold;
+font-size: 200%;
+color: #ffffff;
+padding-bottom: 30px;}
+
+  footer {display: flex;
+    padding-top: 100px;
+    color: #ffffff;
+    
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    justify-content: center;
+    gap: 15px;}
+
+   
+    /*To make main,article and navbar stack vertically in a column for smaller screens*/
+    @media screen and (max-width: 768px) {
+        main, article
+        nav {
+          flex-direction: column;
+          justify-content: center;
+        }
+    }
+    
+        
+      
+
+     
+

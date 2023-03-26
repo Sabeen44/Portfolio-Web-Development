@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Sabeen</title>
+    <title>Sabeen Portfolio</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
       <h1>PORTFOLIO</h1>
@@ -25,76 +24,71 @@
         </ul>
       </nav>
     </header>
-    <article id="profile">
-        <section><img
-            id="profile-pic"
-            src="images/profile-pic.jpg"
-            alt="profile picture"
-           
-          </section>
-  
-        <section id="greeting"></section>
-        <h1>Hello, I'm Sabeen</h1>
-  
-        <p>Aspiring Web Developer</p>
+
+    <article class="profile">
+      <img
+        id="profile-pic"
+        src="images/profile-pic.jpg"
+        alt="profile picture"
+      />
+
+      <section class="greeting"></section>
+      <h1>Hello, I'm Sabeen</h1>
+
+      <p>Aspiring Web Developer</p>
     </article>
-    
-  
-      <main id="wrapper">
-       
-        <section class="main-box">
-          <div class="header-box">
-            <h2>About Me</h2>
-          </div>
-  
-          <div class="image-box" id="image-1">
-            <div class="dropdown-content">
-              <p>Add stuff about myself</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="main-box">
-          <div class="header-box">
-            <h2>Skills</h2>
-          </div>
-          <div class="image-box" id="image-2">
-            <div class="dropdown-content">
-              <p>List of Skills</p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="main-box">
-          <div class="header-box">
-            <h2>Projects</h2>
-          </div>
 
-          <div class="image-box" id="image-3">
-            <div class="dropdown-content">
-              <p>List of projects</p>
-            </div>
+    <main class="wrapper">
+      <div class="main-box">
+        <div class="header-box">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="image-box" id="image-1">
+          <div class="dropdown-content">
+            <p>Add stuff about myself</p>
           </div>
         </div>
-      </main>
+      </div>
 
-      <aside>
-        <h1 id="project-list">Projects</h1>
-        <h2>webdesign for xyz</h2>
-        <img src="images/laptop-tea-2.jpg" width="200" height="200" />
-      </aside>
-  
-  
-      <footer>
-        <a href="mailto:ch.sabeen@gmail.com">Email</a>
-  
-        <a
-          href="www.linkedin.com/in/
-              sabeen-chaudhry"
-          >Linkedin</a
-        >
-      </footer>
-    </body>
-  </html>
+      <div class="main-box">
+        <div class="header-box">
+          <h2>Skills</h2>
+        </div>
+        <div class="image-box" id="image-2">
+          <div class="dropdown-content">
+            <p>List of Skills</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-box">
+        <div class="header-box">
+          <a id="scroll" href="#project-list"><h2>Projects</h2></a>
+        </div>
+        <div class="image-box" id="image-3">
+          <div class="dropdown-content">
+            <p>List of projects</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <h1 id="project-list">Projects</h1>
+
+      <img src="images/project.png" width="200" height="200" />
+      <a href="https://sabeen44.github.io/CV/"><h2>Amazing Web Design</h2> </a>
+    </aside>
+
+    <footer>
+      <a id="Email" href="mailto:ch.sabeen@gmail.com">Email</a>
+
+      <a
+        href="www.linkedin.com/in/
+            sabeen-chaudhry"
+        >Linkedin</a
+      >
+    </footer>
   </body>
 </html>
