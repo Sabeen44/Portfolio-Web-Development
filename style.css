@@ -10,6 +10,7 @@ header {
   background-color: rgb(231, 77, 22);
 }
 
+/*nav is flexbox so ul becomes flex items*/
 nav {
   display: flex;
   padding-top: 15px;
@@ -33,63 +34,64 @@ nav a {
   font-size: 150%;
 }
 
-
-
-#profile {
+.profile {
   display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  gap: 50px;
+}
+.greeting {
+  min-width: 360px;
 }
 
-#profile-pic {
+.profile-pic {
   border-radius: 50%;
-  padding: 20px;
-  margin-left: 200px;
-  min-width: 400px;
+
+  width: 400px;
   height: 400px;
-  transition: box-shadow 300ms
+  transition: box-shadow 300ms;
+  padding-left: 20px;
 }
 img:hover {
-    box-shadow: 0 0 15px rgb(111, 111, 111); /* images have 15px of shadow on hover */
- }
-
-#profile h1 {
-  font-size: 200%;
-  color: white;
-  margin-top: 200px;
-  margin-left: 80px;
+  box-shadow: 0 0 15px rgb(111, 111, 111); /* images have 15px of shadow on hover */
 }
 
-#profile p {
+.profile h1 {
+  font-size: 200%;
+  color: white;
+}
+
+.profile p {
   font-size: 150%;
   font-style: italic;
   color: white;
-  margin-top: 250px;
-  margin-left: -100px;
 }
 
-#wrapper {
+main {
   display: flex;
 
-  flex-direction: row;
   flex-wrap: wrap;
 
   justify-content: center;
-  margin-left: 350px;
-  margin-top: 50px;
+  gap: 50px;
 }
 
 .main-box {
   background-color: #ffffff;
-  width: 400px;
-  padding: 20px;
-  margin: 30px 80px 80px 50px;
-  flex: 0 0 400px;
+
+  /*margin: 30px 80px 80px 50px;*/
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
-  transition: box-shadow 300ms
+  transition: box-shadow 300ms;
+  padding: 20px;
 }
 
 .main-box:hover {
-    box-shadow: 0 0 30px rgb(88, 71, 71); /* images have 15px of shadow on hover */
- }
+  box-shadow: 0 0 30px rgb(88, 71, 71); /* images have 15px of shadow on hover */
+}
 
 .dropdown-content {
   display: none;
@@ -103,16 +105,14 @@ img:hover {
   border-radius: 10px;
 }
 
-
-
 .image-box:hover .dropdown-content {
   display: block;
 }
 .header-box {
   padding: 10px;
-  width: 360px;
+
   font-size: 40px;
-  margin-left: 25px;
+
   color: rgb(66, 131, 133);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -120,10 +120,9 @@ img:hover {
 #image-1 {
   display: flex;
   padding: 10px;
-  margin-top: 10px;
+
   background-image: url(images/laptop-tea-2.jpg);
-  background-size: 350px;
-  width: 360px;
+  background-size: 400px;
   height: 200px;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -132,10 +131,10 @@ img:hover {
 #image-2 {
   display: flex;
   padding: 10px;
-  margin-top: 40px;
+
   background-image: url(images/work.jpg);
   background-size: 400px;
-  width: 360px;
+
   height: 250px;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -144,35 +143,47 @@ img:hover {
 #image-3 {
   display: flex;
   padding: 10px;
-  margin-top: 0px;
+
   background-image: url(images/Teamplayer.jpg);
   background-size: 400px;
-  width: 360px;
+
   height: 250px;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-#scroll {
+.scroll {
   text-decoration: none;
   color: rgb(66, 131, 133);
 }
 
-aside {
-  padding: 50px;
-  margin: 10px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-top: 40px;
+  flex-direction: column;
 }
 
-aside h1,
-aside a {
+.projects h1 {
   font: bold;
   font-size: 200%;
   color: #ffffff;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-aside img {
+.projects h2 {
+  font: bold;
+  font-size: 150%;
+  color: #ffffff;
+}
+
+.projects img {
   border: #ffffff;
   border-radius: 10%;
+}
+
+.projects img:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -190,10 +201,26 @@ footer a {
 }
 
 /*To make main,article and navbar stack vertically in a column for smaller screens*/
-@media screen and (max-width: 768px) {
-  main,
-  article, nav {
-    flex-direction: column;}
-    
+
+@media screen and (max-width: 1050px) {
+  nav,
+  section,
+  main {
+    flex-direction: column;
+
+    align-content: space-between;
+    padding-left: 40px;
+  }
+  .main-box {
+    min-width: 350px;
+  }
+  #image-1,
+  #image-2,
+  #image-3 {
+    min-width: 350px;
+  }
+  .greeting,
+  nav {
+    padding-bottom: 20px;
   }
 }
