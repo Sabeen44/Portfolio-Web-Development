@@ -75,6 +75,7 @@ main {
 
   justify-content: center;
   gap: 50px;
+  padding-bottom: 30px;
 }
 
 .main-box {
@@ -221,6 +222,6 @@ footer a {
   }
   .greeting,
   nav {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }

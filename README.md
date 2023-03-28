@@ -34,6 +34,10 @@ Flexbox and mediascreen can be used to create responsive layout that adapts to d
 
 This project is licensed under the MIT License
 
+## Attribution for images
+
+www.vecteezy.com
+
 ## Acknowledgments
 
 UCB Coding Bootcamp Team
